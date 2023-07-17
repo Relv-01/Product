@@ -9,7 +9,6 @@ public class Car {
 	}
 
 	public Car(String plate, String tradeMark, String color, short model, short speed, boolean state, short speedMax) {
-		super();
 		this.plate = plate;
 		this.tradeMark = tradeMark;
 		this.color = color;
@@ -104,4 +103,4 @@ public class Car {
 				+ speed + ", speedMax=" + speedMax + ", unitsSpeed=" + unitsSpeed + ", state=" + state + "]";
 	}
 }
-}
+
