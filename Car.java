@@ -64,11 +64,6 @@ public class Car {
 		}
 		return false;
 	}
-	
-	public boolean shutDown() {
-		return false;
-	}
-	
 	public short speedUp (short unitsSpeed) throws Exception {
 		this.speed += unitsSpeed;
 		if (!state){
