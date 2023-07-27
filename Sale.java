@@ -29,8 +29,9 @@ public class Sale {
     public double getTotalSale(){
         return 0.0;
     }
-    
+
     public double calcIva (){
-        return 0.0;
+         double calcIva = Product.getValue() * 0.16;
+        return calcIva;
     }
 }

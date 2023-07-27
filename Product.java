@@ -5,11 +5,13 @@ public class Product {
     private int stock;
     private boolean iva;
     public final int STOCK_MIN = 10;
+    private ETypeProduct typeProduct;
+
 
     public Product() {
     }
 
-    public Product(String name, double value, int stock, boolean iva) {
+    public Product(String name, double value, int stock, boolean iva, ETypeProduct typeProduct) {
         this.name = name;
         this.value = value;
         this.stock = stock;
@@ -46,6 +48,14 @@ public class Product {
 
     public void setIva(boolean iva) {
         this.iva = iva;
+    }
+
+    public ETypeProduct getTypeProduct() {
+        return typeProduct;
+    }
+
+    public void setTypeProduct(ETypeProduct typeProduct) {
+        this.typeProduct = typeProduct;
     }
 
     public String toString() {
