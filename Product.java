@@ -13,7 +13,7 @@ public class Product {
 
     public Product(String name, double value, int stock, boolean iva, ETypeProduct typeProduct) {
         this.name = name;
-        this.value = value;
+        this.value = value; 
         this.stock = stock;
         this.iva = iva;
     }
@@ -51,7 +51,7 @@ public class Product {
     }
 
     public ETypeProduct getTypeProduct() {
-        return typeProduct;
+        return getTypeProduct();
     }
 
     public void setTypeProduct(ETypeProduct typeProduct) {

@@ -1,9 +1,9 @@
-public class ETypeProduct {
-    enum typeProduct{
+public enum ETypeProduct {
+    
         LICORES,
         VIVERES,
         MEDICINAS, 
         ASEO,
         RENACHO,
-    }
+        
 }
