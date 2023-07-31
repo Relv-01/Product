@@ -1,9 +1,9 @@
 public enum ETypeProduct {
-    
+
         LICORES,
         VIVERES,
-        MEDICINAS, 
+        MEDICINAS,
         ASEO,
-        RENACHO,
-        
+        RANCHO,
+
 }

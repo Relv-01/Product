@@ -1,7 +1,7 @@
 public class Sale {
     private int cant;
     private Product Product;
-    
+
     public Sale(int cant, Product product) {
         this.cant = cant;
         Product = product;
@@ -22,16 +22,34 @@ public class Sale {
     public void setProduct(Product product) {
         Product = product;
     }
-    public int calcDiscount (){
+
+    public int calcDiscount() {
         return 0;
     }
 
-    public double getTotalSale(){
+    public double getTotalSale() {
         return 0.0;
     }
 
-    public double calcIva (){
-         double calcIva = Product.getValue() * 0.16;
-        return calcIva;
+    public double calcIva() {
+        switch (Product.getTypeProduct()) {
+            case LICORES:
+                double calcIva = Product.getValue() * 0.19;
+                break;
+            case VIVERES:
+                calcIva = Product.getValue() * 0.08;
+                break;
+            case MEDICINAS:
+                calcIva = Product.getValue();
+                break;
+            case ASEO:
+                calcIva = Product.getValue() * 0.14;
+                break;
+            case RANCHO:
+                calcIva = Product.getValue() * 0.19;
+                break;
+        }
+
+        return calcIva();
     }
 }

@@ -5,8 +5,7 @@ public class Product {
     private int stock;
     private boolean iva;
     public final int STOCK_MIN = 10;
-    private ETypeProduct typeProduct;
-
+    private ETypeProduct typeProduct ;
 
     public Product() {
     }
