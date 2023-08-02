@@ -23,8 +23,18 @@ public class Sale {
         Product = product;
     }
 
-    public int calcDiscount() {
-        return 0;
+    public double calcDiscount() {
+        double discount = 1;
+        if (Product.getStock() == 5 && Product.getStock() == 10){
+            discount = Product.getStock() * 0.05;
+        }else if (Product.getStock() == 11 && Product.getStock() == 20){
+            discount = Product.getStock() * 0.10;
+        }else if (Product.getStock() == 21 && Product.getStock() == 50){
+            discount = Product.getStock() * 0.20;
+        }else{
+            discount = Product.getStock() * 0.30;
+        }
+        return discount;
     }
 
     public double getTotalSale() {
