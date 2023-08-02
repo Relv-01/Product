@@ -26,18 +26,19 @@ public class Sale {
     public double calcDiscount() {
         double discount = 1;
         if (Product.getStock() == 5 && Product.getStock() == 10){
-            discount = Product.getStock() * 0.05;
+           discount =  Product.getValue() * Product.getStock() * 0.05;
         }else if (Product.getStock() == 11 && Product.getStock() == 20){
-            discount = Product.getStock() * 0.10;
+            discount = Product.getValue() * Product.getStock() * 0.10;
         }else if (Product.getStock() == 21 && Product.getStock() == 50){
-            discount = Product.getStock() * 0.20;
+            discount = Product.getValue() * Product.getStock() * 0.20;
         }else{
-            discount = Product.getStock() * 0.30;
+            discount = Product.getValue() * Product.getStock() * 0.30; 
         }
-        return discount;
+        return Product.getValue() * Product.getStock() - discount;
     }
 
     public double getTotalSale() {
+        
         return 0.0;
     }
 
