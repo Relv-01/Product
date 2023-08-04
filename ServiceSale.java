@@ -1,15 +1,15 @@
 public class ServiceSale {
-    private Sale Sale;
+    private Product Sale;
 
-    public ServiceSale(Sale sale) {
-        Sale = sale;
+    public ServiceSale(Product Product, int cant ) {
+        Sale = Product;
     }
 
-    public Sale getSale() {
+    public Product getSale() {
         return Sale;
     }
 
-    public void setSale(Sale sale) {
+    public void setSale(Product sale) {
         Sale = sale;
     }
 }
