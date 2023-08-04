@@ -1,15 +1,18 @@
 public class ServiceSale {
-    private Product Sale;
+    private Sale Sale;
 
-    public ServiceSale(Product Product, int cant ) {
-        Sale = Product;
+    public ServiceSale(Sale Sale, int cant) {
+        this.Sale = Sale;
     }
 
-    public Product getSale() {
+    public Sale getSale() {
         return Sale;
     }
 
-    public void setSale(Product sale) {
-        Sale = sale;
+    public void setSale(Sale sale) {
+        this.Sale = sale;
     }
+
+    
+
 }
