@@ -1,10 +1,15 @@
 public class Presenter {
-    private ServiceSale ServiceSale;
+    private ServiceSale serviceSale;
 
     public Presenter() {
     }
 
-    public Presenter(ServiceSale serviceSale) {
-        ServiceSale = serviceSale;
-    }    
+    public double addSale(String name, double value, int stock, boolean iva, ETypeProduct typeProduct) {
+        return serviceSale.getSale().getTotalSale();
+    }
+
+    public String showSale() {
+
+        
+    }
 }
