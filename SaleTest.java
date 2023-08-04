@@ -23,6 +23,10 @@ public class SaleTest {
 
     @Test
     void testGetTotalSale() {
+        Product product1 = new Product("Ron", 17.000, 5, true, ETypeProduct.LICORES);
+        Product product2 = new Product("Paracetamol", 4.500, 10, false, ETypeProduct.MEDICINAS);
+        assertEquals(83.980, product1, 0.001);
+        assertEquals(42.750, product2, 0.001);
 
     }
 }
