@@ -34,12 +34,12 @@ public class Sale {
         }else{
             discount = Product.getValue() * Product.getStock() * 0.30; 
         }
-        return Product.getValue() * Product.getStock() - discount;
+        return discount;
     }
 
-    public double getTotalSale() {
-        
-        return 0.0;
+    public double getTotalSale() { 
+         double totalSale = ((Product.getValue() * Product.getStock()) - calcDiscount()) + calcIva();
+        return totalSale;
     }
 
     public double calcIva() {
