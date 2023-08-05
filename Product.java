@@ -58,8 +58,8 @@ public class Product {
     }
 
     public String toString() {
-        return "Product [name=" + name + ", value=" + value + ", stock=" + stock + ", iva=" + iva + ", STOCK_MIN="
-                + STOCK_MIN + "]";
+        return "Producto: " + name + "\nValor: " + value + "\nStock: " + stock + "\nIva: " + iva + "\nTipo de producto: "
+                + typeProduct;
     }
 
 }

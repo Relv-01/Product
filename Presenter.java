@@ -9,7 +9,9 @@ public class Presenter {
     }
 
     public String showSale() {
-
-        
+        System.out.println(serviceSale.getSale().toString());
+        System.out.println("\n Descuento: " + serviceSale.getSale().calcDiscount());
+        System.out.println("\n Iva: " + serviceSale.getSale().calcIva());
+        return showSale();
     }
 }
