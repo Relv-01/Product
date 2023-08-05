@@ -12,7 +12,4 @@ public class ServiceSale {
     public void setSale(Sale sale) {
         this.sale = sale;
     }
-
-    
-
 }

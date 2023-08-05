@@ -4,7 +4,7 @@ public class Sale {
 
     public Sale(int cant, Product product) {
         this.cant = cant;
-        product = product;
+        this.product = product;
     }
 
     public int getCant() {
@@ -20,7 +20,7 @@ public class Sale {
     }
 
     public void setProduct(Product product) {
-        product = product;
+        this.product = product;
     }
 
     public double calcDiscount() {
@@ -43,9 +43,10 @@ public class Sale {
     }
 
     public double calcIva() {
+        double calcIva = 1;
         switch (product.getTypeProduct()) {
             case LICORES:
-                double calcIva = product.getValue() * 0.19;
+                calcIva = product.getValue() * 0.19;
                 break;
             case VIVERES:
                 calcIva = product.getValue() * 0.08;
@@ -61,6 +62,6 @@ public class Sale {
                 break;
         }
 
-        return calcIva();
+        return calcIva;
     }
 }

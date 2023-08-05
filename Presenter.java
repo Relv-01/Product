@@ -4,8 +4,8 @@ public class Presenter {
     public Presenter() {
     }
 
-    public double addSale(String name, double value, int stock, boolean iva, ETypeProduct typeProduct) {
-        return serviceSale.getSale().getTotalSale();
+    public double addSale(Sale sale) {
+        return sale.getTotalSale();
     }
 
     public String showSale() {

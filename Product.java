@@ -15,6 +15,7 @@ public class Product {
         this.value = value; 
         this.stock = stock;
         this.iva = iva;
+        this.typeProduct = typeProduct;
     }
 
     public String getName() {
@@ -50,7 +51,7 @@ public class Product {
     }
 
     public ETypeProduct getTypeProduct() {
-        return getTypeProduct();
+        return typeProduct;
     }
 
     public void setTypeProduct(ETypeProduct typeProduct) {
