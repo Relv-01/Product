@@ -7,7 +7,7 @@ public class Product {
     public final int STOCK_MIN = 10;
     private ETypeProduct typeProduct ;
 
-    public Product() {
+    public Product(String string, int i, int j, int k, boolean b, ETypeProduct licores) {
     }
 
     public Product(String name, double value, int stock, boolean iva, ETypeProduct typeProduct) {
